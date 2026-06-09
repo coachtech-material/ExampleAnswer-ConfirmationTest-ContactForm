@@ -70,6 +70,8 @@
 | 7. アプリケーションキーの生成 | ルートで以下のコマンドを実行する<br>`sail artisan key:generate` |
 | 8. データベースのマイグレーションと初期データ投入 | 以下のコマンドでテーブルを作成し、初期データを投入します。<br>`sail artisan migrate --seed`<br><br>※既存のデータベースをリセットしたい場合は以下を実行してください。<br>`sail artisan migrate:fresh --seed` |
 
+> **⚠️ 日本語化／翻訳について** — 日本語化は FormRequest の `messages()` と `lang/ja`（認証系）で行います。`laravel-lang/*` 系の外部翻訳パッケージ（`composer require laravel-lang/...`）は導入しないでください。同系パッケージは 2026年5月のサプライチェーン攻撃でマルウェア配布に悪用された経緯があり、本課題では不要です。
+
 ---
 
 ## 4. 画面設計
